@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercises: Forms</title>
+  </head>
+  <body>
+    <h1>Exercises: Forms</h1>
+
+    <p>1. Create a contact form that collects the user's first name, last name, email address, and phone number. Be sure to use appropriate input types, and prevent iOS devices from modifying the email input. See the MDN documentation for a hint.</p>
+
+    <p>2. Add a select box to the form for phone type, with options of home, business, and mobile. Make sure the home option is pre-selected.</p>
+
+    <form action="" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="first_name">First Name</label></dt>
+          <dd><input type="text" name="first_name" id="first_name"></dd>
+
+          <dt><label for="last_name">Last Name</label></dt>
+          <dd><input type="text" name="last_name" id="last_name"></dd>
+
+          <dt><label for="email">Email</label></dt>
+          <dd><input type="email" name="email" id="email" autocomplete="off" autocorrect="off" autocapitalize="none"></dd>
+
+          <dt><label for="phone">Phone Number</label></dt>
+          <dd><input type="tel" name="phone" id="phone"></dd>
+
+          <dt><label for="phone_type">Phone Type</label></dt>
+          <dd>
+            <select name="phone_type" id="phone_type">
+              <option value="home" selected>Home</option>
+              <option value="business">Business</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </dd>
+        </dl>
+
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <p>3. Create a form for filtering news articles by a single category and any number of selected tags. Use radios for the category and checkboxes for tags. Make sure your form method is get to ensure the user can save and share the filtered URL.</p>
+    <p>Categories: Core, Plugins and Libraries, Conventions, Reviews, Opinion, People</p>
+    <p>Tags: HTML, CSS, Javascript, Ruby, Rails, Python, Django</p>
+
+    <form action="" method="get">
+      <fieldset>
+        <h2>Categories</h2>
+          <ul>
+            <li>
+              <label for="core_cat">
+                <input type="radio" name="cat" id="core_cat">
+                Core
+              </label>
+            </li>
+        
+            
+            <li>
+              <label for="plugin_cat">
+                <input type="radio" name="cat" id="plugin_cat">
+                Plugins and Libraries
+              </label>
+            </li>
+        
+            
+            <li>
+              <label for="convention_cat">
+                <input type="radio" name="cat" id="convention_cat">
+                Conventions
+              </label>
+            </li>
+        
+            
+            <li>
+              <label for="review_cat">
+                <input type="radio" name="cat" id="review_cat">
+                Reviews
+              </label>
+            </li>
+        
+            
+            <li>
+              <label for="opinion_cat">
+                <input type="radio" name="cat" id="opinion_cat">
+                Opinions
+              </label>
+            </li>
+        
+            
+            <li>
+              <label for="people_cat">
+                <input type="radio" name="cat" id="people_cat">
+                People
+              </label>
+            </li>
+          </ul>
+        
+        <h2>Tags</h2>
+          <ul>
+            <li>
+              <label for="html_tag">
+                <input type="checkbox" id="html_tag">
+                HTML
+              </label>
+            </li>
+                
+            <li>
+              <label for="css_tag">
+                <input type="checkbox" id="css_tag">
+                CSS
+              </label>
+            </li>
+        
+            <li>
+              <label for="js_tag">
+                <input type="checkbox" id="js_tag">
+                Javscript
+              </label>
+            </li>
+        
+            <li>
+              <label for="ruby_tag">
+                <input type="checkbox" id="ruby_tag">
+                Ruby
+              </label>
+            </li>
+        
+            <li>
+              <label for="rails_tag">
+                <input type="checkbox" id="rails_tag">
+                Rails
+              </label>
+            </li>
+        
+            <li>
+              <label for="python_tag">
+                <input type="checkbox" id="python_tag">
+                Python
+              </label>
+            </li>
+        
+            <li>
+              <label for="django_tag">
+                <input type="checkbox" id="django_tag">
+                Django
+              </label>
+            </li>
+          </ul>
+
+          <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <p>4. Convert the radios and checkboxes in the filter form to selects. Make sure you retain the ability to select any number of tags.</p>
+    <p>6. Provide the user with a way to reset the filter form.</p>
+
+    <form action="" method="get">
+      <fieldset>
+        <dl>
+          <dt><label for="categories">Categories</label></dt>
+
+          <dd>
+            <select name="categories" id="categories">
+              <option value="core">Core</option>
+              <option value="plugins">Plugins and Libraries</option>
+              <option value="conventions">Conventions</option>
+              <option value="reviews">Reviews</option>
+              <option value="opinions">Opinions</option>
+              <option value="people">People</option>
+            </select></dd>
+
+          <dt><label for="tags">Tags</label></dt>
+
+          <dd>
+            <select name="categories" id="tags" multiple>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">Javascript</option>
+              <option value="ruby">Ruby</option>
+              <option value="rails">Rails</option>
+              <option value="python">Python</option>
+              <option value="django">Django</option>
+            </select>
+          </dd>
+        </dl>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+      </fieldset>
+    </form>
+
+    <p>5. Go over the markup for the previous number. There is a missing attribute with the select elements. What is it and what error does it raise with the w3c validator? Note that you have to complete the html structure before running it with the w3c validator.</p>
+    <p>--- Missing id on select</p>
+  </body>
+</html>

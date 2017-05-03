@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle">
+        <img src="images/icon-menu.png" alt="Hamburger menu">
+      </label>
+
+      <main>
+        <div id="modal">
+          <form action="#" method="post">
+            <fieldset>
+              <dl>
+                <dt>
+                  <label for="title">Title</label>
+                </dt><!--
+                --><dd><input type="text" name="title" id="title" value="Item 2"></dd>
+
+                <dt>
+                  <label for="day">Due Date</label>
+                </dt><!--
+
+                --><dd>
+                  <select name="day" id="day" class="third">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16" selected>16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select><!--
+
+                  --><span class="divider">/</span><!--
+
+                  --><select name="month" id="month" class="third">
+                    <option value="">Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select><!--
+
+                  --><span class="divider">/</span><!--
+
+                  --><select name="year" id="year" class="third">
+                    <option value="">Year</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </dd>
+
+                <dt>
+                  <label for="description">Description</label>
+                </dt><!--
+                --><dd>
+                  <textarea name="description" id="description" cols="30" rows="10">Description</textarea>
+                </dd>
+              </dl>
+
+              <div class="button-group">
+                <a class="button" href="#">Save</a>
+                <a class="button" href="#">Mark As Complete</a>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <h1>
+          <time datetime="2016-02">02/16</time>
+          <span class=" tag selected">8</span>
+        </h1>
+
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">
+                <input type="checkbox" id="add">
+                <label for="add"><a href="#modal">Add new to do</a></label>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" name="item1" id="item1">
+                <label for="item1">Item 1</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item2" id="item2">
+                <label for="item2">Item 2</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item3" id="item3" checked>
+                <label for="item3">Item 3</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item4" id="item4" checked>
+                <label for="item4">Item 4</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item5" id="item5" checked>
+                <label for="item5">Item 5</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item6" id="item6">
+                <label for="item6">Item 6</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item7" id="item7">
+                <label for="item7">Item 7</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item8" id="item8">
+                <label for="item8">Item 8</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" name="item9" id="item9">
+                <label for="item9">Item 9</label>
+              </td>
+
+              <td>
+                <p>Delete</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+
+      <nav>
+        <section id="todo">
+          <h2>
+            All Todos
+            <span class="tag">18</span>
+          </h2>
+
+          <ul>
+            <li class="overlay">
+              <time datetime="2016-02">02/16</time>
+              <span class=" tag selected">8</span>
+            </li>
+
+            <li>
+              <time datetime="2016-03">03/16</time>
+              <span class="tag">2</span>
+            </li>
+
+            <li>
+              <time datetime="2016-04">04/16</time>
+              <span class="tag">1</span>
+            </li>
+
+            <li>
+              <time datetime="2016-05">05/16</time>
+              <span class="tag">1</span>
+            </li>
+
+            <li>
+              <time datetime="2016-06">06/16</time>
+              <span class="tag">6</span>
+            </li>
+          </ul>
+        </section>
+
+        <section id="complete">
+          <h2>Completed</h2>
+
+          <ul>
+            <li>
+              <time datetime="2015-02">02/15</time>
+            </li>
+            <li>
+              <time datetime="2015-03">03/15</time>
+            </li>
+            <li>
+              <time datetime="2015-04">04/15</time>
+            </li>
+            <li>
+              <time datetime="2015-05">05/15</time>
+            </li>
+            <li>
+              <time datetime="2014-06">06/14</time>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+puts "The code gives an error because there is no '&' to identify block as a block"

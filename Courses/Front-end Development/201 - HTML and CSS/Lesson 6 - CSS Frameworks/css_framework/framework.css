@@ -1,0 +1,88 @@
+@import url("whitespace-reset.css");
+
+h1 {
+  margin: 0 0 25px 0;
+  font-size: 2.6em;
+}
+
+h2 {
+  margin: 0 0 25px 0;
+  font-size: 2.2em;
+}
+
+h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.8em;
+}
+
+h4 {
+  margin: 0 0 20px 0;
+  font-size: 1.5em;
+}
+
+.copy p {
+  margin: 0 0 20px 0;
+  font-size: 1em;
+  line-height: 150%;
+}
+
+.copy ul {
+  padding: 0 0 20px 25px;
+  list-style: disc;
+}
+
+.copy ul ul {
+  padding: 20px 0 20px 18px;
+  list-style-type: circle;
+}
+
+.copy ol {
+  padding: 0 0 20px 25px;
+  list-style: decimal;
+}
+
+.copy ol ol {
+  padding: 20px 0 20px 18px;
+  list-style: lower-latin;
+}
+
+.copy ol.roman { list-style: upper-roman; }
+
+.copy ol.roman ol { list-style: lower-roman; }
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+}
+
+.row:after {
+  display: block;
+  clear: both;
+  line-height: 0;
+  content: "";
+}
+
+.half,
+.third,
+.fourth,
+.sixth,
+.two_third,
+.five_sixth {
+  float: left;
+  box-sizing: border-box;
+}
+
+.half { width: 50%; }
+.third { width: 33.33%; }
+.fourth { width: 25%; }
+.sixth { width: 16.66%; }
+.two_third { width: 66.66%; }
+.five_sixth { width: 83.33%; }
+
+.margin_row * { margin-left: 2%; }
+.margin_row .half { width: 48%; }
+.margin_row .third { width: 31.33%; }
+.margin_row .fourth { width: 23%; }
+.margin_row .sixth { width: 14.66%; }
+.margin_row .two_third { width: 64.66%; }
+.margin_row .five_sixth { width: 81.33%; }

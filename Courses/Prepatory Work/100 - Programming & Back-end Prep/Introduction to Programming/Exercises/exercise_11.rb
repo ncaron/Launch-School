@@ -1,0 +1,1 @@
+puts "Looking at the Core API for Ruby, I really like regexp because it is powerful in finding patters in strings."

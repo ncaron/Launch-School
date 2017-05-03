@@ -1,0 +1,339 @@
+@import url("whitespace-reset.css");
+
+* { box-sizing: border-box; }
+
+body {
+  font: normal 16px 'Open Sans', Arial, sans-serif;
+  color: #444;
+  padding-top: 44px;
+}
+
+a {
+  text-decoration: none;
+  color: #008000;
+  font-weight: bold;
+}
+
+a:hover { text-decoration: underline; }
+
+.button {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 10px 30px;
+  color: #fff;
+  background: #008000;
+}
+
+.button:hover {
+  background: #006000;
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
+#menu {
+  background: #fff;
+  font-size: 13px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 10px solid #f5f5f5;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+#menu a {
+  color: #444;
+  font-weight: normal;
+}
+
+/* HEADER */
+
+#front {
+  background: url("../images/front.jpg") 50% 0 no-repeat;
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+#front h1,
+#front h3 {
+  color: #fff;
+  font-weight: normal;
+}
+
+#front h1 { font-size: 72px; }
+
+#front h3 {
+  font-size: 31px;
+  text-transform: uppercase;
+}
+
+#front img { padding-top: 150px; }
+
+/* MAIN */
+
+main h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 70px 0 35px 0;
+}
+
+main h3 { font-size: 24px; }
+
+main p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+section {
+  border-top: 1px solid #efefef;
+  padding: 0 20px 70px 20px;
+}
+
+section > h2 { text-align: center; }
+
+/* TICKETS */
+
+#tickets { text-align: center; }
+
+#tickets p { margin-bottom: 10px; }
+
+/* SPEAKERS */
+
+#speakers {
+  text-align: center;
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 0 70px 0;
+}
+
+#speakers::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.speaker {
+  position: relative;
+  float: left;
+  width: 280px;
+  height: 400px;
+  margin: 0 5px 10px 5px;
+  border: 1px solid #e8e8e8;
+  box-sizing: content-box;
+}
+
+.speaker h3 {
+  color: #008000;
+  padding: 40px 0 8px 0;
+}
+
+.speaker p { padding: 0 10px; }
+
+.overlay {
+  position: absolute;
+  padding: 0 20px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.overlay p + p { padding-top: 20px; }
+
+.overlay h3 { padding-top: 20px; }
+
+.speaker:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SCHEDULE */
+
+table {
+  max-width: 958px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table h3 {
+  display: inline-block;
+  font-weight: normal;
+}
+
+table h4 {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.photo img { width: 130px; }
+
+tr td {
+  font-size: 24px;
+  padding: 15px;
+}
+
+tr {
+  border-top: 1px solid #efefef;
+  position: relative;
+}
+
+tr:last-of-type { border-bottom: 1px solid #efefef; }
+
+.tag {
+  display: inline-block;
+  vertical-align: 6px;
+  font-size: 7px;
+  padding: 1px 4px;
+  background: #eee;
+  margin-right: 3px;
+  border: 1px solid #aaa;
+}
+
+.tag:first-of-type { margin-left: 10px; }
+
+.tag:last-of-type { margin-right: 0; }
+
+/* LOCATION */
+
+#location { padding: 0 0 70px 0; }
+
+#location iframe {
+  width: 100%;
+}
+
+#location p {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#location p:first-of-type { padding-bottom: 35px; }
+
+#location p:last-of-type { padding-top: 15px; }
+
+/* PAPERS */
+
+#papers {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+#papers p { margin-bottom: 15px; }
+
+#papers .button { margin-bottom: 10px; }
+
+/* SPONSORS */
+
+#sponsors {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#sponsors section {
+  margin-bottom: 30px;
+  padding: 0 20px;
+  border: none;
+}
+
+.gold a { margin-right: 40px; }
+
+.silver a img {
+  width: 240px; 
+  margin-right: 30px;
+}
+
+.support a img {
+  width: 180px;
+  margin-right: 40px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 45px 0 30px 0;
+  color: #fff;
+  background: url("../images/people.jpg") 0 25% no-repeat;
+  background-size: cover;
+}
+
+footer h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+
+footer h3 { font-size: 31px; }
+
+.footer-transparent p { margin-bottom: 20px; }
+
+.footer-transparent p:last-of-type { margin-bottom: 10px; }
+
+.footer-transparent {
+  padding: 30px 10px;
+  background: rgba(0, 0, 0, .7);
+  background-size: 100%;
+}
+
+.footer-transparent-contents {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 960px) {
+  #speakers { width: 600px; }
+}
+
+@media (max-width: 655px) {
+  body { padding-top: 0; }
+
+  #menu { display: none; }
+
+  #front h2 { font-size: 40px; }
+
+  #front h3 { font-size: 20px; }
+
+  #front img { padding-top: 90px; }
+
+  tr td {
+    display: block;
+    padding-left: 0;
+  }
+
+  tr { display: block; }
+
+  .hour { text-align: right; }
+
+  .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .photo img { width: 80px; }
+}
+
+@media (max-width: 600px) {
+  #speakers { width: 280px; }
+}

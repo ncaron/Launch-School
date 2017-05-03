@@ -1,0 +1,1 @@
+puts "Nothing will be printed to the screen as there is a return before puts."

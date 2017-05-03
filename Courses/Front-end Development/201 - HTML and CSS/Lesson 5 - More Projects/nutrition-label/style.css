@@ -1,0 +1,105 @@
+@import url("whitespace-reset.css");
+
+* { box-sizing: border-box; }
+
+body { font: normal 28px Helvetica, Arial, sans-serif; }
+
+.container {
+  width: 680px;
+  border: 2px solid black;
+  margin: 8px;
+  padding: 13px;
+}
+
+h1 { font-size: 56px; }
+
+h2 {
+  border-top: 30px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 5px;
+  padding: 10px 0;
+}
+
+dl { display: inline-block; }
+
+dd,
+dt {
+  display: inline;
+}
+
+header dl {
+  width: 50%;
+  padding: 5px 0;
+}
+
+header dl:first-of-type dt { font-weight: bold; }
+
+header dl:last-of-type { text-align: right; }
+
+header {
+  border-bottom: 13px solid black;
+  margin-bottom: 5px;
+}
+
+table {
+  width: 100%;  
+  border-collapse: collapse;
+}
+
+thead,
+th + td,
+td + td  {
+  text-align: right;
+  font-weight: bold;  
+}
+
+table:first-of-type tbody:first-of-type {
+  border-bottom: 30px solid black;
+}
+
+tbody th,
+.tab + td {
+  text-align: left;
+}
+
+dl dd,
+.tab + td,
+table tbody:last-of-type td {
+  font-weight: normal;  
+}
+
+th,
+td {
+  border-top: 1px solid black;
+  padding: 2px 0;
+}
+
+table:first-of-type tbody:last-of-type tr:first-of-type td,
+table thead th,
+.tab {
+  border-top: none;
+}
+
+.tab { padding: 0 5px; }
+
+tfoot td {
+  font-size: 25px;  
+  text-align: left;
+  padding: 15px;
+  text-indent: -18px;
+}
+
+table:last-of-type { font-size: 22px; }
+
+table:last-of-type thead tr th {
+  font-weight: normal;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+table:last-of-type tbody tr td {
+  border-top: none;
+  text-align: left;
+}
+
+table:last-of-type .tab { padding-left: 35px; }

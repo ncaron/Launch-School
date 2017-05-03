@@ -1,0 +1,154 @@
+@import url("whitespace-reset.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #45494d;
+  font: normal 20px Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+main {
+  padding: 120px 0 140px 0;
+}
+
+h2 {
+  font-size: 36px;
+  padding-bottom: 44px;
+}
+
+h2::before {
+  display: inline-block;
+  content: "\2022";
+  padding-right: 26px;
+}
+
+h2::after {
+  display: inline-block;
+  content: "\2022";
+  padding-left: 26px;
+}
+
+/* HEADER */
+
+header {
+  background: url(../images/bg_body.gif);
+}
+
+header h1 {
+  padding: 134px 0 122px 0;
+}
+
+header ul li {
+  padding: 0 44px;
+}
+
+nav {
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+
+nav a {
+  color: #cacaca;
+}
+
+nav a.active {
+  color: #5f9bd7;
+  font-weight: bold;
+}
+
+/* MAIN */
+
+h3 {
+  color: #3e59b2;
+  padding-bottom: 15px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main article:first-of-type p:first-of-type {
+  padding-bottom: 153px;
+}
+
+main article p {
+  padding: 0 150px;
+}
+
+article.projects p {
+  padding-bottom: 125px;
+}
+
+main article figure {
+  margin-bottom: 47px;
+}
+
+main article ul li a img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+main article ul li {
+  margin: 30px;
+}
+
+main article ul li a {
+  display: inline-block;
+  color: #3e59b2;
+}
+
+/* FOOTER */
+
+footer {
+  background: #e7e7e7;
+  color: #b2b2b2;
+}
+
+footer p:first-of-type {
+  padding-top: 88px;
+}
+
+footer p:last-of-type {
+  padding-bottom: 44px;
+}
+
+footer ul {
+  margin-left: 65px;
+  padding-bottom: 76px;
+}
+
+footer a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding: 0 60px;
+  content: "";
+  background: transparent url("../images/icons_social-media.png") 0 0 no-repeat;
+  background-size: 48px;
+  box-sizing: border-box;
+  text-indent: -9999999px;
+}
+
+footer a.facebook {
+  background-position: 0 33.33%;
+}
+
+footer a.email {
+  background-position: 0 66.66%;
+}
+
+footer a.instagram {
+  background-position: 0 100%;
+}

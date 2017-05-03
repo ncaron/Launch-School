@@ -1,0 +1,51 @@
+all:
+  choose_language: "\tPlease choose a language:
+      \n\tVeuillez choisir une langue:
+      \n\t1) English
+      \n\t2) Français"
+  invalid_language: "\tMust choose 1 or 2
+      \n\tDoit choisir 1 ou 2"
+
+en:
+  welcome: "Welcome to Calculator! Enter your name:"
+  hi: "Hi"
+  valid_name: "Make sure to use a valid name."
+  first_number: "What's the first number?"
+  second_number: "What's the second number?"
+  invalid_number: "Hmm... that doesn't look like a valid number"
+  operation: "\tWhat operation would you like to perform?
+      \n\t1) add
+      \n\t2) substract
+      \n\t3) multiply
+      \n\t4) divide"
+  add: "Adding"
+  subtract: "Subtracting"
+  multiply: "Multiplying"
+  divide: "Dividing"
+  numbers: "the two numbers..."
+  invalid_operation: "Must choose 1, 2, 3 or 4"
+  result: "The result is"
+  calculate_again: "Do you want to perform another calculation? (Y to calculate again)"
+  exit: "Thank you for using the calculator. Good bye!"
+
+fr:
+  welcome: "Bienvenue à Calculatrice! Entrez votre nom:"
+  hi: "Salut"
+  valid_name: "Assurez-vous d'utiliser un nom valide."
+  first_number: "Quel est le premier numéro?"
+  second_number: "Quel est le second numéro?"
+  invalid_number: "Hmm ... ça ne ressemble pas à un nombre valide"
+  operation: "\tQuel opération souhaitez-vous effectuer?
+      \n\t1) ajouter
+      \n\t2) soustraire
+      \n\t3) multiplier
+      \n\t4) diviser"
+  add: "Ajout"
+  subtract: "Soustraire"
+  multiply: "Multiplier"
+  divide: "Diviser"
+  numbers: "des deux numéros..."
+  invalid_operation: "Doit choisir 1, 2, 3 ou 4"
+  result: "Le résultat est"
+  calculate_again: "Voulez-vous effectuer un autre calcul? (Y pour calculer à nouveau)"
+  exit: "Merci d'avoir utilisé la calculatrice. Au revoir!"

@@ -1,0 +1,34 @@
+all:
+  languages:
+    en: "\t  1) English"
+    fr: "\t  2) Français"
+  choose_language:
+    en: "\tPlease choose a language:"
+    fr: "\tVeuillez choisir une langue:"
+  invalid_language:
+    en: "\tMust choose between 1 and"
+    fr: "\tDoit choisir entre 1 et"
+
+en:
+  welcome: "Welcome to Loan Calculator!"
+  loan_amount: "Please enter the loan amount."
+  invalid_loan_amount: "Loan amount must be a number greater than 0."
+  annual_percent: "Please enter the Annual Percentage Rate."
+  invalid_annual_percent: "The Annual Percentage Rate needs to be between 0 and 100."
+  loan_duration_years: "Please enter the loan duration in years."
+  invalid_loan_duration_years: "The loan duration needs to be greater than 0."
+  monthly_payment: "Your monthly payment is $"
+  calculate_again: "Do you want to perform another calculation? (Y to calculate again)"
+  exit: "Thank you for using Loan Calculator."
+
+fr:
+  welcome: "Bienvenue à Calculatrice de Prêt!"
+  loan_amount: "Veuillez entrer le montant du prêt."
+  invalid_loan_amount: "Le montant du prêt doit être un nombre supérieur à 0."
+  annual_percent: "Veuillez entrer le taux de pourcentage annuel."
+  invalid_annual_percent: "Le taux de pourcentage annuel doit être compris entre 0 et 100."
+  loan_duration_years: "Veuillez entrer la durée du prêt en années."
+  invalid_loan_duration_years: "La durée du prêt doit être supérieure ou égale à 0."
+  monthly_payment: "Votre paiement mensuel est de $"
+  calculate_again: "Voulez-vous effectuer un autre calcul? (Y pour calculer à nouveau)"
+  exit: "Merci d'utiliser Calculatrice de prêt."

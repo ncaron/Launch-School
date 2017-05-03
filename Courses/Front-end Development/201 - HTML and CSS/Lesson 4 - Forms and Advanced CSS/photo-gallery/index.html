@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fluid Photo Gallery</title>
+    <style>
+      body {
+        background: black;
+        color: #efefef;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      main {
+        text-align: center;
+        min-width: 600px;
+        max-width: 1000px;
+        background: #333;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      figcaption {
+        text-align: left;
+      }
+
+      figure img {
+        border: 10px solid white;
+      }
+
+      ul {
+        padding: 0;
+        margin: 15px -15px 0 -15px;
+      }
+
+      li {
+        display: inline-block;
+        width: 25%;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+
+      li img {
+        border: 5px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>My Photo Gallery</h1>
+
+      <figure>
+        <img src="http://placehold.it/1200x900" alt="Placeholder">
+        <figcaption>Example Photo</figcaption>
+      </figure>
+
+      <ul>
+        <li>
+          <img src="http://placehold.it/1200x900" alt="Placeholder">
+        </li><!--
+
+        --><li>
+          <img src="http://placehold.it/1200x900" alt="Placeholder">
+        </li><!--
+
+        --><li>
+          <img src="http://placehold.it/1200x900" alt="Placeholder">
+        </li><!--
+
+        --><li>
+          <img src="http://placehold.it/1200x900" alt="Placeholder">
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

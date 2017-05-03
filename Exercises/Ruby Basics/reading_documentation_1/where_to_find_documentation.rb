@@ -1,0 +1,1 @@
+puts "http://ruby-doc.org/"

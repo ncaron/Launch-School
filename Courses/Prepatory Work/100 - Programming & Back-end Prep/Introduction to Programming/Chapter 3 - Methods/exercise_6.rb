@@ -1,0 +1,1 @@
+puts "calculate_product expects 2 arguments but only 1 was provided and there was no default value for the second one."

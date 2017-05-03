@@ -1,0 +1,1 @@
+puts "The variable 'shoes' on line 3 does not exist in the current scope."

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Text Formatting</title>
+  </head>
+  <style>
+    .e1 {
+      font: italic normal 16px/140% Helvetica, Arial, sans-serif;
+    }
+
+    .e2 {
+      font-family: Georgia, serif;
+    }
+
+    .e2 code {
+      font-family: monospace, sans-serif;
+      text-decoration: underline;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .e2 p {
+      line-height: 150%;
+    }
+
+    .e3 p {
+      font-size: 18px;
+    }
+
+    .e3 mark {
+      font-size: 12px;
+      font-family: Courier, serif;
+    }
+
+    .e3 strong {
+      font-size: 15px;
+    }
+
+    .e3 em {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <p class="e1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id diam neque. Donec a tellus eget nulla hendrerit pulvinar. Proin vel metus ante. Vivamus aliquam vestibulum posuere. Sed non dui justo. Sed eget pharetra tellus. Aenean consectetur dapibus iaculis. Vivamus accumsan in elit id sollicitudin. Nullam tellus tortor, commodo nec ultricies quis, lacinia posuere augue. Praesent tempus turpis purus, nec molestie lacus fringilla sit amet. Integer rhoncus dui nec nisi malesuada congue. Aliquam erat volutpat. Maecenas tempor, tellus cursus rhoncus semper, erat magna aliquam lorem, sed porta tellus ligula eget leo. Etiam augue est, pellentesque eu pharetra in, commodo in nulla.
+    </p>
+
+    <article class="e2">
+      <header>
+        <h1>Finessing `feColorMatrix`</h1>
+      </header>
+
+      <p>Harness the power of <code>feColorMatrix</code> to create detailed filters, with Una Kravets as your guide.</p>
+    </article>
+
+    <div class="e3">
+      <p>That episode was <mark>un<strong>be<em>lieve</em></strong>able</mark>!</p>
+    </div>
+  </body>
+</html>
