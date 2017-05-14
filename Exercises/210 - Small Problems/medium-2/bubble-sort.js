@@ -48,6 +48,12 @@ bubbleSort(array);
 console.log(array);     // ['Alice', 'Bonnie', 'Kim', 'Pete', 'Rachel', 'Sue', 'Tyler']
 */
 
+// use a while loop to continuously loop
+// at every iteration, set swapped flag to false
+// use a for loop to loop through the array and swap two elements if the first is bigger than second.
+// if the swap happend, set the swapped flag to true
+// after the for loop, if the swapped flag is still false, it means no swapping occured so break out of the loop.
+
 function bubbleSort(arr) {
   var swapped;
   var temp;
