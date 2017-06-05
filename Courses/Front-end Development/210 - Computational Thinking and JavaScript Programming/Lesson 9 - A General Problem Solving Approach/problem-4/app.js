@@ -1,7 +1,7 @@
 /*
 You are given a list of numbers in "short-hand" range notation where only the significant part of the next number is
 written because we know the numbers are always increasing (ex. "1,3,7,2,4,1" represents [1, 3, 7, 12, 14, 21]). Some
-people use different seperators for their ranges (ex. "1-3,1-2", "!:3,1:2", "1..3,1..2" represent [1, 2, 3, 11, 12]).
+people use different seperators for their ranges (ex. "1-3,1-2", "1:3,1:2", "1..3,1..2" represent [1, 2, 3, 11, 12]).
 Range limits are always inclusive.
 
 Your job is the return a list of the complete numbers.
@@ -9,57 +9,71 @@ Your job is the return a list of the complete numbers.
 The possible seperators are: ["-", ":", ".."]
 */
 
-
 /*
-- Take a string of numbers and delimiters
-  - Numbers are in short form (12 would be 2)
-  - Numbers are always increasing.
-  - , means numbers
-  - - : .. means range of numbers
+- INPUT
+  -  String
+    -  The list of short hand numbers and ranges
 
-- Find the long version of the numbers such that they are all increasing.
-
-- Return the list of complete numbers.
+- RETURN
   - Array
+    - Numbers converted to long form in increasing order
+    - Numbers and ranges are seperated by ,
+    - Range seperatorsare - : ..
 
-- Algorithm
-  - Split the string into digit arrays using ,
-  - change range of numbers to numbers.
-    - split the range in numbers.
-  - Map the digit characters to numbers.
-  - Loop through each number, if the number is smaller than the previous, increase the 10s digit until it is bigger.
-    - To eliminate a few of the +10 loops, figure out which to add first.
-      - If 45, 7... Need to add 10 to 7 four times. (45/10 + 7)
+- ALGORITHM
+  - Create an array to hold all the new numbers
+  - SPLIT the string at each , to get an array of numbers/ranges
+  - FOREACH value in numbers/ranges array
+    - SPLIT the current value at the range seperators - : ..
+    - MAP each number string to a Number
+    - IF the length of the split is 1, it means it's a number, not a range
+      - PUSH this number to the new numbers array
+        - IF the number is smaller or equal than the previous one in the array
+          - Add 10 to it until it's bigger
+    - ELSE it means the number is a range
+      - PUSH each number to the new numbers array
+        -  IF the number is smaller or equal than the previous one in the array
+          - Add 10 to it until it's bigger
+  - RETURN the array
 */
 
-function longHand(numberStr) {
-  var numArr = numberStr.split(/,/);
-  expandRanges(numArr);
+function longHand(numbers) {
+  numbers = numbers.split(',');
+  var longHandArr = [];
   var i;
 
-  /*for (i = 1; i < numArr.length; i += 1) {
-    numArr[i] = getNextBiggest(numArr[i], numArr[i - 1])
-  }*/
+  numbers.forEach(function(element) {
+    element = element.split(/\.\.|\-|\:/).map(Number);
 
-  return numArr;
+    if (element.length === 1) {
+      longHandArr.push(getNextNumber(longHandArr, element[0]));
+    } else {
+      element = longHand(element.join(','));
+
+      for (i = element[0]; i <= element[1]; i += 1) {
+        longHandArr.push(getNextNumber(longHandArr, i));
+      }
+    }
+  });
+
+  return longHandArr;
 }
 
-function getNextBiggest(number1, number2) {
-  number1 += (Math.floor(number2 / 10)) * 10;
+function getNextNumber(arr, value) {
+  var previous = arr[arr.length - 1] || -1;
 
-  while (number1 <= number2) {
-    number1 += 10;
+  while (value < previous) {
+    value += 10;
   }
 
-  return number1;
-}
-
-function expandRanges(numArr) {
-  numArr = numArr.split(/:|-|\.\./);
-  console.log(numArr);
+  return value;
 }
 
 
-//console.log(longHand('1,3,1,2'));  // [1, 3, 11, 12]
-//console.log(longHand('1'));        // [1]
-console.log(longHand('1-3,1-2'));
+// TEST CASES
+console.log(longHand('1,3,7,2,4,1'));    // [1, 3, 7, 12, 14, 21]
+console.log(longHand('1-3,1-2'));        // [1, 2, 3, 11, 12]
+console.log(longHand('1:3,1:2'));        // [1, 2, 3, 11, 12]
+console.log(longHand('1..3,1..2'));      // [1, 2, 3, 11, 12]
+console.log(longHand('1..3,2..1'));      // [1, 2, 3, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+console.log(longHand('1, 2-7, 3:1'));    // [1, 2, 3, 4, 5, 6, 7, 13, 14, 15, 16, 17, 18, 19, 20, 21]
