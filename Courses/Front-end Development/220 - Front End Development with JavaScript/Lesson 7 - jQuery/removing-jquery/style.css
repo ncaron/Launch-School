@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+
+body {
+  font: normal 48px monospace, Arial, sans-serif;
+  text-align: center;
+}
+
+#calculator {
+  display: inline-block;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+select {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  font: normal 24px monospace, Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  width: 60px;
+}
