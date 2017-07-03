@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+
+body {
+  background: #780e24;
+  font: normal 14px Helvetica, Arial, sans-serif;
+}
+
+main {
+  background: #fff;
+  width: 850px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+#canvas {
+  position: relative;
+  background: linear-gradient(to bottom, #fff, #06c);
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+li { list-style: none; }
+
+dt { margin-bottom: 5px; }
+dd { margin: 0 0 15px 0; }
+
+input[type="number"] {
+  font: normal 14px Helvetica, Arial, sans-serif;
+  width: 70px;
+  height: 30px;
+  padding: 5px 0 5px 5px;
+}
+
+#canvas > div {
+  position: absolute;
+  background: #dde338;
+  width: 30px;
+  height: 30px;
+}
+
+#canvas .circle { border-radius: 100%; }
+
+#canvas .star {
+  background: url("../star.png") 0 0 no-repeat;
+  background-size: 100% auto;
+}
