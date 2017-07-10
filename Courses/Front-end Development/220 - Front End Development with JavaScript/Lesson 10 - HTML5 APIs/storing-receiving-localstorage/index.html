@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment: Storing and Retrieving State with localStorage</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">Tab 1</a></li>
+          <li><a href="#">Tab 2</a></li>
+          <li><a href="#">Tab 3</a></li>
+        </ul>
+      </nav>
+
+      <section id="tabs">
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum urna ex, eget tincidunt nulla dignissim ac. Sed volutpat at sapien vitae viverra. Proin dapibus congue nisi eu pharetra. Donec eu feugiat nunc, sit amet dignissim erat. Suspendisse ut tortor eget sem fringilla placerat sit amet in orci. Mauris non consequat enim, finibus pretium lorem. Nulla facilisi. Nunc quam lorem, pharetra id fringilla sed, rutrum in ligula.</p>
+        </article>
+
+        <article>
+          <p>Proin non odio non augue ullamcorper rutrum eu vitae magna. Proin ante elit, venenatis ut consequat vel, dictum sed neque. Nulla et ante quis ipsum pulvinar rhoncus sed non dui. Etiam et mollis dui. Nulla gravida ex vel nisi eleifend rutrum. Cras facilisis, sapien non interdum suscipit, arcu justo tempus risus, id ullamcorper mi urna non dui. Vestibulum vel ante risus. Maecenas ornare porta elit ut egestas. Quisque iaculis ante vitae diam vehicula fringilla. Cras lobortis ex sit amet dolor lacinia condimentum.</p>
+        </article>
+
+        <article>
+          <p>Suspendisse at suscipit ante, at posuere nulla. Curabitur accumsan dui non sodales imperdiet. Proin at nisl ligula. Quisque gravida, nibh sit amet ultricies suscipit, nunc dui sollicitudin magna, quis lacinia nunc nunc ullamcorper urna. Quisque sit amet dui sed tellus faucibus tempor. Nullam suscipit orci non turpis ullamcorper sollicitudin. Ut at viverra velit, non posuere felis. Sed vestibulum eleifend ornare. Ut blandit laoreet odio at suscipit. Vestibulum aliquet lorem tortor, eu tincidunt tortor mollis nec. Vivamus ut lectus dui. Fusce semper cursus eros, sed venenatis leo lacinia non. Phasellus posuere nulla sapien, ut faucibus nisi imperdiet at. Donec et tincidunt eros. Fusce pharetra imperdiet lacus. Aliquam in dolor velit.</p>
+        </article>
+      </section>
+
+      <form action="" method="get">
+        <fieldset>
+          <h2>Change background color to:</h2>
+          <ul>
+            <li>
+              <label><input type="radio" name="background" value="red">Red</label>
+            </li>
+            <li>
+              <label><input type="radio" name="background" value="green">Green</label>
+            </li>
+            <li>
+              <label><input type="radio" name="background" value="blue">Blue</label>
+            </li>
+            <li>
+              <label><input type="radio" name="background" value="yellow">Yellow</label>
+            </li>
+            <li>
+              <label><input type="radio" name="background" value="pink">Pink</label>
+            </li>
+          </ul>
+
+          <h2>Leave a note</h2>
+          <textarea name="note" cols="80" rows="8"></textarea>
+        </fieldset>
+      </form>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
