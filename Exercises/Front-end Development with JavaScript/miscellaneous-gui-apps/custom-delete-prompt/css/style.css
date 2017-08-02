@@ -1,0 +1,93 @@
+* { box-sizing: border-box; }
+
+body {
+  background: #06c;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+h1 { color: white; }
+ul { list-style: none; }
+
+li {
+  position: relative;
+  background: white;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+li + li { margin-top: 25px; }
+
+.delete {
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.delete:hover {
+  width: 25px;
+  height: 25px;
+}
+
+.delete::before,
+.delete::after {
+  position: absolute;
+  background: red;
+  content: "";
+}
+
+.delete::before {
+  height: 3px;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-top: -1px;
+}
+
+.delete::after {
+  width: 3px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+}
+
+#delete-prompt {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  font-size: 20px;
+  margin-left: -250px;
+  background: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .4);
+}
+
+.buttons {
+  position: relative;
+  text-align: right;
+}
+
+.buttons a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#yes { background: green; }
+#no { background: red; }

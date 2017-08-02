@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+
+body {
+  background: #06c;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 { color: white; }
+ul { list-style: none; }
+
+#todos li {
+  position: relative;
+  background: white;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#todos li + li { margin-top: 25px; }
+
+#contextmenu {
+  position: absolute;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+}
+
+#contextmenu li {
+  background: #ccc;
+  padding: 15px;
+}
+
+#contextmenu li:hover {
+  background: #bbb;
+  color: white;
+}
+
+#contextmenu li:first-of-type {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px
+}
+
+#contextmenu li:last-of-type {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px
+}
+
+#contextmenu li + li { border-top: 1px solid white; }
+#contextmenu li a { color: black; }
+#contextmenu li:hover a { color: white; }
+
+#delete-prompt {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  font-size: 20px;
+  margin-left: -250px;
+  background: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .4);
+}
+
+.buttons {
+  position: relative;
+  text-align: right;
+}
+
+.buttons a {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#yes { background: green; }
+#no { background: red; }

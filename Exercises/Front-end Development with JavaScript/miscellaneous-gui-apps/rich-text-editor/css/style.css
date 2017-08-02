@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+body { background: orange; }
+
+#editor {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* TOOLBAR */
+
+#toolbar {
+  background: white;
+  width: 100%;
+  padding: 0 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  background: white;
+  color: black;
+  width: 35px;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  transition: background .25s ease-in;
+}
+
+button:hover { background: #eee; }
+button.active { color: #00aa66; }
+
+/* TEXT BOX */
+
+#text-box {
+  background: white;
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+}
+
+#text-box:focus { outline: none; }

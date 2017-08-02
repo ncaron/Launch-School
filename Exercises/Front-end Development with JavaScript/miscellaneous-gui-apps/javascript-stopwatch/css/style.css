@@ -1,0 +1,23 @@
+body {
+  background: orange;
+  color: white;
+  font: bold 72px Helvetica, Arial, sans-serif;
+  padding-top: 200px;
+}
+
+a.btn {
+  color: inherit;
+  font-size: 32px;
+  font-weight: normal;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#watch,
+#buttons {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}

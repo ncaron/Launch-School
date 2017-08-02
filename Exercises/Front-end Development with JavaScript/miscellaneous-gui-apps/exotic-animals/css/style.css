@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+
+body {
+  background: #06c;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  min-width: 800px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#exotic-animals {
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  margin: 0 1% 5% 0;
+  vertical-align: top;
+  border: 5px solid white;
+}
+
+figure:nth-of-type(3n + 1) { margin-left: 0; }
+figure:nth-of-type(3n + 3) { margin-right: 0; }
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, .8);
+  color: white;
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  z-index: 1;
+}
+
+figcaption.hidden { display: none; }
+figcaption::-webkit-scrollbar { width: 10px; }
+figcaption::-webkit-scrollbar-track-piece { background: #eee; }
+figcaption::-webkit-scrollbar-thumb { background: #333; }

@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+body {
+  background: #06c;
+  font: normal 16px, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  width: 600px;
+  margin: 25px auto;
+}
+
+main {
+  background: white;
+  width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+a.btn {
+  background: #06c;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+p.full-desc { display: none; }
