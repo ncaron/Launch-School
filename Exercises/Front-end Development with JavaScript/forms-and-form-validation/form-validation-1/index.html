@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form action="" method="post" novalidate>
+      <h1>Sign Up Form</h1>
+      <fieldset>
+        <span class="error-message form-error"></span>
+        <dl>
+          <dt><label for="fname">First Name</label></dt>
+          <dd>
+            <input type="text" id="fname" name="fname" pattern="[a-zA-Z' ]+" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt><label for="lname">Last Name</label></dt>
+          <dd>
+            <input type="text" id="lname" name="lname" pattern="[a-zA-Z' ]+" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt><label for="email">Email</label></dt>
+          <dd>
+            <input type="email" id="email" name="email" placeholder="username@domain.com" pattern=".+@.+" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt><label for="password">Password</label></dt>
+          <dd>
+            <input type="password" id="password" name="password" pattern=".{10,}" required>
+            <span class="error-message"></span>
+          </dd>
+
+          <dt><label for="phone">Phone Number</label></dt>
+          <dd>
+            <input type="text" id="phone" name="phone" placeholder="111-222-3333" pattern="\d{3}-\d{3}-\d{4}">
+            <span class="error-message"></span>
+          </dd>
+
+          <dt><label for="credit-card">Credit Card</label></dt>
+          <dd>
+            <input type="text" id="cc1" name="credit-card" maxlength="4" pattern="\d{4}" required><!--
+            --><input type="text" id="cc2" name="credit-card" maxlength="4" pattern="\d{4}" required><!--
+            --><input type="text" id="cc3" name="credit-card" maxlength="4" pattern="\d{4}" required><!--
+            --><input type="text" id="cc4" name="credit-card" maxlength="4" pattern="\d{4}" required>
+            <span class="error-message"></span>
+          </dd>
+        </dl>
+
+        <button type="submit">Sign Up</button>
+      </fieldset>
+    </form>
+
+    <div id="serialized">
+      <h2>Serialized Form</h2>
+      <span id="serialized-data"></span>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

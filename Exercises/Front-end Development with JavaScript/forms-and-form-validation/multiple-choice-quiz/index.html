@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  </head>
+  <body>
+    <h1>Multiple Choice Quiz</h1>
+
+    <form action="" method="post" novalidate>
+      <fieldset></fieldset>
+      <button class="btn" id="submit">Submit Quiz</button>
+      <button class="btn" id="reset" disabled>Reset</button>
+    </form>
+
+    <script id="question-template" type="text/x-handlebars-template">
+      <div class="question" data-id={{id}}>
+        <p>Q{{id}}. {{{description}}}</p>
+
+        {{#each options}}
+        <label>
+          <input name="{{../id}}" type="radio" value="{{.}}">
+          {{.}}
+        </label>
+        {{/each}}
+
+        <p class="message"></p>
+      </div>
+    </script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
